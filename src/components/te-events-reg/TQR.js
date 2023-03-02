@@ -1,5 +1,7 @@
 import React from 'react'
 import FOOTER from '../FOOTER'
+import TQRL from "../images/TQRL.png"
+import qr from "../images/QRCode.jpg"
 const TQR = () => {
   return (
     <div>
@@ -39,12 +41,12 @@ const TQR = () => {
          <div className='qr-div' >
          <p><b style={{color:"#A4C636"}}>PAY USING MOBILE NUMBER :</b><b style={{color:"whitesmoke",fontWeight:"500"}}>9985228800</b></p><br/>
          <p><b style={{color:"#A4C636"}}>PAY WITH QR CODE :</b></p><br/>
-          <img src='/images/QRCode.jpg' className='qr'></img></div>
+          <img src={qr} className='qr'></img></div>
          </div>
          <div id='reg'><a id='reg-btn' href='https://docs.google.com/forms/d/e/1FAIpQLSfwFJ-mvJNqY8SltKhcACY5bKbw3beWhPF82pKVtOkk0WRJpg/viewform?usp=sf_link'>Register</a></div>
         </div>
         <div id='poster'>
-        <img src="/images/TQRL.png"></img>
+        <img src={TQRL}></img>
         </div>
       </div>
     </div>

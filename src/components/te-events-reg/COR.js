@@ -1,5 +1,7 @@
 import React from 'react'
 import FOOTER from '../FOOTER'
+import CORL from "../images/CORL.jpg"
+import qr100 from "../images/CORL.jpg"
 const COR = () => {
   return (
     <div>
@@ -36,12 +38,12 @@ const COR = () => {
          <div className='qr-div' >
          <p><b style={{color:"#A4C636"}}>PAY USING MOBILE NUMBER :</b><b style={{color:"whitesmoke",fontWeight:"500"}}>9985228800</b></p><br/>
          <p><b style={{color:"#A4C636"}}>PAY WITH QR CODE :</b></p><br/>
-          <img src='/images/QRCode_100Rs.jpg' className='qr'></img></div>
+          <img src={qr100} className='qr'></img></div>
          </div>
          <div id='reg'><a id='reg-btn' href='https://docs.google.com/forms/d/e/1FAIpQLSfwFJ-mvJNqY8SltKhcACY5bKbw3beWhPF82pKVtOkk0WRJpg/viewform?usp=sf_link'>Register</a></div>
         </div>
         <div id='poster'>
-        <img src="/images/CORL.jpg"></img>
+        <img src={CORL}></img>
         </div>
       </div>
       
