@@ -1,5 +1,7 @@
 import React from 'react'
 import FOOTER from '../FOOTER'
+import SSRL from "../images/SSRL.jpg"
+import qr50 from "../images/QRCode_50Rs.jpg"
 const SSR = () => {
   return (
     <div>
@@ -35,11 +37,11 @@ short video clips will be shown and based on that questions will be asked.
          <p><b style={{color:"#A4C636"}}>Prize money :</b>  <b style={{color:"whitesmoke",fontWeight:"500"}}>200/-</b></p><br/>
          <p><b style={{color:"#A4C636"}}>PAY USING MOBILE NUMBER :</b><b style={{color:"whitesmoke",fontWeight:"500"}}>9985228800</b></p><br/>
          <p><b style={{color:"#A4C636"}}>PAY WITH QR CODE :</b></p>
-         <div className='qr-div'><img src='/images/QRCode_50Rs.jpg' className='qr'></img></div>
+         <div className='qr-div'><img src={qr50} className='qr'></img></div>
          <div id='reg'><a id='reg-btn' href='https://docs.google.com/forms/d/e/1FAIpQLSdYlDVQiL-qL_tm88X85sRmDDOPjsYo0hD4CT8qqeh6vMz4Dg/viewform?usp=sf_link'>Register</a></div>
       </div>
       <div id='poster'>
-        <img src="/images/SSRL.jpg"></img>
+        <img src={SSRL}></img>
         </div>
     </div>
   </div>
