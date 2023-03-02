@@ -1,5 +1,11 @@
 import React from "react";
 import 'animate.css';
+import SLRL from "./images/SLRL.jpg"
+import MMRL from "./images/MMRL.png"
+import THRL from "./images/THRL.png"
+import RTRL from "./images/RTRL.png"
+import RCRL from "./images/RCRL.jpg"
+import SSRL from "./images/SSRL.jpg"
 import  { useState, useEffect, useRef } from 'react';
 
 import FOOTER from "./FOOTER";
@@ -117,7 +123,7 @@ function Nontechnical(){
               <a id="link1" style={{textDecoration:"none",color:"black"}} href="/slr">
                 <div id="te1" ref={target1} className={`animate__animated ${isVisible1 ? 'animate__zoomIn' : ''}`} onAnimationEnd={onAnimationEnd}>
                     <div id="te-logo">
-                    <img src="/images/SLRL.jpg"></img>
+                    <img src={SLRL}></img>
                     </div>
                     <div id="te-content">
                     <div style={{backgroundColor:"#013158",borderLeft:"5px solid #A4C639",borderRight:"5px solid #A4C639",width:"100%"}}><p id="te-head">Snakes and Ladders</p></div>
@@ -129,7 +135,7 @@ function Nontechnical(){
               <a href="/mmr" id="link2"style={{textDecoration:"none",color:"black"}}>
                 <div id="te2" ref={target2} className={`animate__animated ${isVisible2 ? 'animate__zoomIn' : ''}`} onAnimationEnd={onAnimationEnd}>
                     <div id="te-logo">
-                    <img src="/images/MMRL.png"></img>
+                    <img src={MMRL}></img>
                     </div>
                     <div id="te-content">
                     <div style={{backgroundColor:"#013158",borderLeft:"5px solid #A4C639",borderRight:"5px solid #A4C639",width:"100%"}}><p id="te-head">Movie minds</p></div>
@@ -141,7 +147,7 @@ function Nontechnical(){
               <a href="/thr"id="link3" style={{textDecoration:"none",color:"black"}}>
                 <div id="te3"ref={target3} className={`animate__animated ${isVisible3 ? 'animate__zoomIn' : ''}`} onAnimationEnd={onAnimationEnd}>
                     <div id="te-logo">
-                    <img src="/images/THRL.png"></img>
+                    <img src={THRL}></img>
                     </div>
                     <div id="te-content">
                     <div style={{backgroundColor:"#013158",borderLeft:"5px solid #A4C639",borderRight:"5px solid #A4C639",width:"100%"}}><p id="te-head">Treasure Hunt</p></div>
@@ -156,7 +162,7 @@ function Nontechnical(){
               <a href="/rtr" id="link4" style={{textDecoration:"none",color:"black"}}>
                 <div id="te4"ref={target4} className={`animate__animated ${isVisible4 ? 'animate__zoomIn' : ''}`} onAnimationEnd={onAnimationEnd}>
                   <div id="te-logo">
-                  <img src="/images/RTRL.png"></img>
+                  <img src={RTRL}></img>
                   </div>
                   <div id="te-content">
                   <div style={{backgroundColor:"#013158",borderLeft:"5px solid #A4C639",borderRight:"5px solid #A4C639",width:"100%"}}><p id="te-head">Rapid Typing</p></div>
@@ -169,7 +175,7 @@ function Nontechnical(){
               <a href="/rcr" id="link5"style={{textDecoration:"none",color:"black"}}>
                 <div id="te5"ref={target5} className={`animate__animated ${isVisible5 ? 'animate__zoomIn' : ''}`} onAnimationEnd={onAnimationEnd}>
                     <div id="te-logo">
-                    <img src="/images/RCRL.jpg"></img>
+                    <img src={RCRL}></img>
                     </div>
                     <div id="te-content">
                      <div style={{backgroundColor:"#013158",borderLeft:"5px solid #A4C639",borderRight:"5px solid #A4C639",width:"100%"}}><p id="te-head">Rubik's cube</p></div>
@@ -181,7 +187,7 @@ function Nontechnical(){
               <a href="/ssr" id="link6" style={{textDecoration:"none",color:"black"}}>
                 <div id="te6"ref={target6} className={`animate__animated ${isVisible6 ? 'animate__zoomIn' : ''}`} onAnimationEnd={onAnimationEnd}>
                     <div id="te-logo">
-                    <img src="/images/SSRL.jpg"></img>
+                    <img src={SSRL}></img>
                     </div>
                     <div id="te-content">
                     <div style={{backgroundColor:"#013158",borderLeft:"5px solid #A4C639",borderRight:"5px solid #A4C639",width:"100%"}}><p id="te-head">Sight on Site</p></div>

@@ -1,9 +1,14 @@
 import React from "react";
 import 'animate.css';
 import  { useState, useEffect, useRef } from 'react';
+import bkf from "./images/bkf.jpg"
+import mu from "./images/male-user.png"
 
+import fu from "./images/female-profile.png"
 import FOOTER from "./FOOTER";
-
+import fbl from "./images/FBL.jpg"
+import cul from "./images/CULL.jpg"
+import qr100 from "./images/QRCode_100Rs.jpg"
 function Home(){
     
   const [isVisible1, setIsVisible1] = useState(false);
@@ -59,7 +64,7 @@ function Home(){
         
         <div className="total">
         <div className="background">
-          <img id="bk" src="https://img.freepik.com/free-vector/modern-design-with-connecting-lines-dots_1048-11911.jpg?w=1380&t=st=1677678127~exp=1677678727~hmac=253688071a71ec1472e296161a1b5e4c18b141f2e898069079423221eb2043e1"></img>         {/*"/images/bk.jpg" */}
+          <img id="bk" src={bkf}></img>         {/*"/images/bk.jpg" */}
          <p style={{position:"relative"}} id="title" ref={target1} className={`animate__animated ${isVisible1 ? 'animate__zoomInDown' : ''}`} onAnimationEnd={onAnimationEnd}>
           ITYUKTA 2K23</p>
         
@@ -101,7 +106,7 @@ function Home(){
         <div id="e-head1">
           <div id="c-p"  >
             <div id="c-p-logo">
-               <img src="/images/male-user.png"></img>
+               <img src={mu}></img>
             </div>
             <div id="c-p-content">
             <p id="c-p-h"><u>CHAIRPERSON</u></p>
@@ -113,7 +118,7 @@ function Home(){
           </div>
           <div id="fa-co"   >
           <div id="fa-co-logo">
-          <img src="/images/female-profile.png"></img>
+          <img src={fu}></img>
           </div>
           <div id="fa-co-content">
           <p id="fa-co-h"><u>FACULTY COORDINATOR</u></p>
@@ -128,7 +133,7 @@ function Home(){
         <div id="e-head2">
           <div id="m-co" >
           <div id="m-co-logo">
-          <img src="/images/male-user.png"></img>
+          <img src={mu}></img>
           </div>
           <div id="m-co-content">
           <p id="m-co-h"><u><b>STUDENT MALE COORDINATOR</b></u></p>
@@ -138,7 +143,7 @@ function Home(){
           </div>
           <div id="fe-co" >
           <div id="fe-co-logo">
-          <img src="/images/female-profile.png"></img>
+          <img src={fu}></img>
           </div>
           <div id="fe-co-content">
           <p id="fe-co-h"><u><b>STUDENT FEMALE COORDINATOR</b></u></p>
@@ -155,7 +160,7 @@ function Home(){
         <div id="dance-e">
         <div id="cul">
           <div id="cul-logo">
-          <img src="/images/FBL.jpg"></img>
+          <img src={fbl}></img>
           </div>
           <div id="cul-content">
              <p id="e-head" >Cultural Night</p><br/>
@@ -172,7 +177,7 @@ function Home(){
              </p>
           </div>
           <div id="fb-logo">
-          <img src="/images/CULL.jpg"></img>
+          <img src={cul}></img>
           </div>
         </div>
         </div>
@@ -188,7 +193,7 @@ function Home(){
         <p><b style={{color:"#A4C636"}}>GENERAL REGISTRATION FEE (per person) :</b>  <b style={{color:"whitesmoke",fontWeight:"500"}}>100 Rs</b></p><br/>
         <p><b style={{color:"#A4C636"}}>PAY USING MOBILE NUMBER :</b><b style={{color:"whitesmoke",fontWeight:"500"}}>9985228800</b></p><br/>
         <p><b style={{color:"#A4C636"}}>PAY WITH QR CODE :</b></p>
-           <div className='qr-div'><img src='/images/QRCode_100Rs.jpg' className='qr'></img></div>
+           <div className='qr-div'><img src={qr100} className='qr'></img></div>
            <div id='reg-1'><a id='reg-btn-1' href='https://docs.google.com/forms/d/e/1FAIpQLSdX-5eQ-vvKMrq8rOoI28vAnCMKo1WLdbGuBUXzNkW3Fnr23w/viewform?usp=sf_link'>Register</a></div><br/>
         {/* <p><u style={{color:"#FF9900"}}>WITHOUT ACCOMODATION</u></p>
         <p>Single day Special lunch fee + Entry fee : <b style={{color:"white"}}>200 Rs</b></p>

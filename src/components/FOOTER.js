@@ -1,5 +1,6 @@
 import React from 'react'
-
+import linked from "./images/linkedin.svg"
+import github from "./images/github.svg"
 const FOOTER = () => {
   return (
     <div className='fo-head' >
@@ -10,10 +11,10 @@ const FOOTER = () => {
         <div id='fo-content'>
           <div id='fo-content-1'>
         <a className='a-my-social-icon' href="https://www.linkedin.com/in/hari-kowshik-molugu-56042923b">
-          <img  className="my-social-icon-1" src="/images/linkedin.svg" />
+          <img  className="my-social-icon-1" src={linked} />
         </a>
         <a className='a-my-social-icon' href="https://github.com/HarikowshikMolugu">
-          <img className="my-social-icon-2" src="/images/github.svg" />
+          <img className="my-social-icon-2" src={github} />
         </a>
         </div>
           <p id='fo-name'>Designed by  <b>Hari kowshik Molugu</b></p>

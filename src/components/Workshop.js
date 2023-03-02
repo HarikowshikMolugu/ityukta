@@ -2,6 +2,10 @@ import React from "react";
 import 'animate.css';
 import  { useState, useEffect, useRef } from 'react';
 import FOOTER from "./FOOTER";
+import mu from "./images/male-user.png";
+import WBDRL from "./images/WBDRL.png";
+import DVRL from "./images/DVRL.png"
+import fu from "./images/female-profile.png"
 
 function Workshop(){
     const [isVisible1, setIsVisible1] = useState(false);
@@ -52,12 +56,12 @@ function Workshop(){
           <a href="/dv" id="w-link1" style={{textDecoration:"none",color:"black"}}>
             <div id="workshop1" ref={target1} className={`animate__animated ${isVisible1 ? 'animate__zoomIn' : ''}`} onAnimationEnd={onAnimationEnd}>
             <div id="workshop1-logo">
-            <img src="/images/DVRL.png"></img>
+            <img src={DVRL}></img>
             </div>
             <div id="head-div"><p id="head">Data Analytics and Visualization</p></div>
             <div id="workshop1-content">
               <div id="w1-icon">
-              <img src="/images/female-profile.png"></img>
+              <img src={fu}></img>
               </div>
                <div>
                <p id="name">By Dr.Ch.Bindu Madhuri</p>
@@ -68,12 +72,12 @@ function Workshop(){
           <a href="/wbd" id="w-link2" style={{textDecoration:"none",color:"black"}}>
             <div id="workshop2" ref={target2} className={`animate__animated ${isVisible2 ? 'animate__zoomIn' : ''}`} onAnimationEnd={onAnimationEnd}>
             <div id="workshop2-logo">
-            <img src="/images/WBDRL.jpg"></img>
+            <img src={WBDRL}></img>
             </div>
             <div id="head-div"><p id="head">Web Development</p></div>
             <div id="workshop2-content">
             <div id="w2-icon">
-            <img src="/images/male-user.png"></img>
+            <img src={mu}></img>
             </div>
               <div>
                <p id="name">By ACM Web Masters </p>

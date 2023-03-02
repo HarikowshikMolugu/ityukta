@@ -1,6 +1,11 @@
 import React from "react";
 import 'animate.css';
-
+import CDRL from "./images/CDRL.jpg"
+import WDRL from "./images/WDRL.jpg"
+import PERL from "./images/PERL.jpg"
+import TQRL from "./images/TQRL.png"
+import CORL from "./images/CORL.jpg"
+import PPTRL from "./images/PPTRL.jpg"
 import  { useState, useEffect, useRef } from 'react';
 import FOOTER from "./FOOTER";
 function Technical(){
@@ -112,7 +117,7 @@ function Technical(){
             <a href="/cdr" id="link1" style={{textDecoration:"none",color:"black"}}>
                 <div id="te1" ref={target1} className={`animate__animated ${isVisible1 ? 'animate__zoomIn' : ''}`} onAnimationEnd={onAnimationEnd}>
                     <div id="te-logo">
-                    <img src="/images/CDRL.jpg"></img>
+                    <img src={CDRL}></img>
                     </div>
                     <div id="te-content">
                         <div style={{backgroundColor:"#013158",borderLeft:"5px solid #A4C639",borderRight:"5px solid #A4C639",width:"100%"}}><p id="te-head">Code Debugging</p></div>
@@ -124,7 +129,7 @@ function Technical(){
             <a href="/wdr" id="link2" style={{textDecoration:"none",color:"black"}}>
                 <div id="te2" ref={target2} className={`animate__animated ${isVisible2 ? 'animate__zoomIn' : ''}`} onAnimationEnd={onAnimationEnd}>
                     <div id="te-logo">
-                    <img src="/images/WDRL.jpg"></img>
+                    <img src={WDRL}></img>
                     </div>
                     <div id="te-content">
                     <div style={{backgroundColor:"#013158",borderLeft:"5px solid #A4C639",borderRight:"5px solid #A4C639",width:"100%"}}><p id="te-head">Web Design</p></div>
@@ -136,7 +141,7 @@ function Technical(){
             <a href="/per" id="link3" style={{textDecoration:"none",color:"black"}}>
                 <div id="te3"ref={target3} className={`animate__animated ${isVisible3 ? 'animate__zoomIn' : ''}`} onAnimationEnd={onAnimationEnd}>
                     <div id="te-logo">
-                      <img src="/images/PERL.jpg"></img>
+                      <img src={PERL}></img>
                     </div>
                     <div id="te-content">
                       <div style={{backgroundColor:"#013158",borderLeft:"5px solid #A4C639",borderRight:"5px solid #A4C639",width:"100%"}}><p id="te-head">Project Expo</p></div>
@@ -150,7 +155,7 @@ function Technical(){
             <a href="/tqr" id="link4" style={{textDecoration:"none",color:"black"}}>
                 <div id="te4"ref={target4} className={`animate__animated ${isVisible4 ? 'animate__zoomIn' : ''}`} onAnimationEnd={onAnimationEnd}>
                     <div id="te-logo">
-                    <img src="/images/TQRL.png"></img>
+                    <img src={TQRL}></img>
                     </div>
                     <div id="te-content">
                       <div style={{backgroundColor:"#013158",borderLeft:"5px solid #A4C639",borderRight:"5px solid #A4C639",width:"100%"}}><p id="te-head">Tech Quiz</p></div>
@@ -162,7 +167,7 @@ function Technical(){
               <a href="/cor" id="link5" style={{textDecoration:"none",color:"black"}}>
                 <div id="te5"ref={target5} className={`animate__animated ${isVisible5 ? 'animate__zoomIn' : ''}`} onAnimationEnd={onAnimationEnd}>
                     <div id="te-logo">
-                    <img src="/images/CORL.jpg"></img>
+                    <img src={CORL}></img>
                     </div>
                     <div id="te-content">
                       <div style={{backgroundColor:"#013158",borderLeft:"5px solid #A4C639",borderRight:"5px solid #A4C639",width:"100%"}}><p id="te-head">CodeAthon</p></div>
@@ -174,7 +179,7 @@ function Technical(){
               <a href="/pptr" id="link6" style={{textDecoration:"none",color:"black"}}>
                 <div id="te6"ref={target6} className={`animate__animated ${isVisible6 ? 'animate__zoomIn' : ''}`} onAnimationEnd={onAnimationEnd}>
                     <div id="te-logo">
-                    <img src="/images/PPTRL.jpg"></img>
+                    <img src={PPTRL}></img>
                     </div>
                     <div id="te-content">
                       <div style={{backgroundColor:"#013158",borderLeft:"5px solid #A4C639",borderRight:"5px solid #A4C639",width:"100%"}}><p id="te-head">Power point presentatiom</p></div>

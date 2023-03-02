@@ -1,6 +1,8 @@
 import React ,{ useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-
+import ml from "./images/mainlogo.png"
+import insta from "./images/insta2.svg"
+import gmail from "./images/gmail2.svg"
 import "./main.css"
 
 
@@ -16,10 +18,10 @@ function Navbar() {
 
   return (
     <header className="Nav">
-       <img className="main-icon" src="/images/mainlogo.png" />
+       <img className="main-icon" src={ml} />
        <p id="idol">ITYUKTA 2K<b id="idol-1">23</b></p>
       <nav ref={navRef}>
-        <a href="/" style={{color:"#00A1F1"}}>Home</a>
+        <a href="*" style={{color:"#00A1F1"}}>Home</a>
         <div className="dropdown">
         <a className="dropbtn" href="/Workshop">Workshops </a>
         <div className="dropdown-content" style={{marginTop:"100px"}}>
@@ -56,10 +58,10 @@ function Navbar() {
           <FaTimes />
         </button>
         <a href="https://instagram.com/ityukta__2k23?igshid=YmMyMTA2M2Y=">
-          <img className="social-icon" src="/images/insta2.svg" />
+          <img className="social-icon" src={insta} />
         </a>
         <a href="mailto:ityukta2k23@gmail.com">
-          <img className="social-icon" src="/images/gmail2.svg" />
+          <img className="social-icon" src={gmail} />
         </a>
         
       </nav>
