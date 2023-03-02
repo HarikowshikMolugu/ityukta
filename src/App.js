@@ -22,7 +22,7 @@ import RCR from './components/nonte-events-reg/RCR';
 import SSR from './components/nonte-events-reg/SSR';
 import DV from './components/workshops/dv';
 import WBD from './components/workshops/wbd';
-import Pagenotfound from './components/Pagenotfound';
+// import Pagenotfound from './components/Pagenotfound';
 function App() {
   return (
      
@@ -54,8 +54,8 @@ function App() {
           <Route path='/Technical' element={<Technical />} /> 
           <Route path='/Nontechnical' element={<Nontechnical />} />
           <Route path='/Meetus' element={<Meetus />} />
-          <Route path='/' element={<Home />} />
-          <Route path='*' element={<Pagenotfound />} />
+          <Route path='*' element={<Home />} />
+          {/* <Route path='/' element={<Pagenotfound />} /> */}
 
         </Routes>
         </div>
